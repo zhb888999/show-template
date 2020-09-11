@@ -6,8 +6,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 1vw;
-    background-image: url("background.png");
+    padding-top: 5vw;
+    background-image: url("/static/img/background.png");
 }
 main {
     width: 90vw;
