@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       @import url(static/index.css); 
+    </style>
+</head>
+<body>
+   <main>
+        <div class="show">
+            <div class="img">
+                <img id="show" src="static/predict.png" onclick="selectImage();">
+            </div>
+            <div class="img">
+                <img id="return" src="static/result.png">
+            </div>
+        </div>
+        <div class="select">
+            <input id="image" type="file" name="image" onchange="upload();" accept=".jpg">
+            <button onclick="showJsonWindow();">显示json结果</button>
+        </div>
+        <div id="jsonWindow">
+            <textarea readonly="readonly" id="jsonResult"></textarea>
+            <button onclick="closeJsonWindow();">关闭</button>
+        </div>
+   </main>
+   <script type="text/javascript" src="static/index.js"></script>
+</body>
+</html>
